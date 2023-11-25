@@ -1,0 +1,83 @@
+
+:root {
+  --max-width: 1280px;
+  --min-width: 300px;
+  --pc-width: 1280px;
+  --tablet-width: 768px;
+  --background: #fffffe;;
+  --background2: #d8eefe;
+  --headline: #3da9fc;
+  --paragraph: #094067;
+  --button: #3da9fc ;
+  --accent: #ef4565;
+  --white: #FFFFFF;
+  --black: #000000;
+  --black3: rgba(0,0,0,0.3)
+};
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body img {
+  width: 100%;
+  position: relative;
+}
+
+body a {
+  text-decoration: none;color: unset;
+}
+
+body p, body h1, body h2, body h3, body h4 {padding: 0;margin:0;}
+p {font-size: 1.4rem;letter-spacing: 0.02em;}
+h1 {font-size: 4rem;}
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.4rem;}
+h4 {font-size: 1.8rem;}
+body section {padding: 8rem 4rem;}
+body li {list-style: none;letter-spacing: 0.02em;}
+body div {letter-spacing: 0.02em;font-size: 1.4rem;}
+body ul,body li {list-style: none;}
+body button {
+  background: var(--paragraph);
+  color: var(--white);
+  border: none;
+  width: auto;
+  height: 3.6rem;
+  padding: .8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+body button:hover {
+  background: var(--button);
+}
+
+section h3 {font-size: 3.6rem;text-align: center;margin: 2.4rem 0;}
+section p {color: var(--black);}
+section li {list-style: none;}
+section button {
+    font-size: 1.6rem;
+    padding: .8rem;
+    font-weight: bold;
+    width: 12rem;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:768px) {
+  body section {padding:4rem 2rem}
+  body p {font-size: 1.4rem;}
+  section h3 {font-size: 2.4rem;text-align: center;margin: 2.4rem 0;}
+}
